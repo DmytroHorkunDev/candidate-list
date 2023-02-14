@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <span class="name">{{candidate.contact_name}}</span>
+
+  <div class="separated-line"></div>
+
+  <div class="options">
+    <div class="information">
+      <app-card-information [icon]="'email'" [label]="candidate.email"></app-card-information>
+      <app-card-information [icon]="'phone'" [label]="candidate.phone_number"></app-card-information>
+    </div>
+
+<!--    TODO: use angular material menu (implement it inside shared folder) here instead, getting options from @Input()-->
+    <div class="actions">
+        <mat-icon class="delete" (click)="onDelete.emit(candidate)">delete</mat-icon>
+    </div>
+  </div>
+</div>

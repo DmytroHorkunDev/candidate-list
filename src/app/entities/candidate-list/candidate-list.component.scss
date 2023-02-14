@@ -1,0 +1,15 @@
+:host{
+  .wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 16px;
+
+    app-input{
+      margin-bottom: 50px;
+    }
+  }
+
+  .candidate-list app-candidate-card{
+    margin-bottom: 16px;
+  }
+}

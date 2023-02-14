@@ -1,0 +1,42 @@
+:host{
+  display: block;
+
+  .wrapper{
+    border-radius: var(--default-radius);
+    border: 2px solid var(--primary);
+    padding: 16px;
+
+    .name{
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .separated-line{
+      height: 1px;
+      background-color: var(--primary);
+      width: 60%;
+      margin: 14px 0;
+    }
+
+    .options{
+      display: flex;
+      justify-content: space-between;
+
+      .actions{
+        mat-icon{
+          cursor: pointer;
+        }
+
+        .delete {
+          color: var(--danger);
+        }
+      }
+    }
+
+    .information{
+      app-card-information + app-card-information{
+        margin-top: 16px;
+      }
+    }
+  }
+}

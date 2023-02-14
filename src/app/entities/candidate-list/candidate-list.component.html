@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <app-input
+    [formControl]="searchInputControl"
+    [placeholder]="'Please enter number, email or name here...'"
+  ></app-input>
+
+  <div class="candidate-list">
+    <ng-container *ngFor="let candidate of candidates$ | async">
+      <app-candidate-card
+        [candidate]="candidate"
+        (onDelete)="deleteCandidate($event)"
+      >
+      </app-candidate-card>
+    </ng-container>
+  </div>
+</div>

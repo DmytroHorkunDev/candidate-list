@@ -1,0 +1,12 @@
+:host{
+  display: block;
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+
+    mat-icon{
+      margin-right: 4px;
+    }
+  }
+}
